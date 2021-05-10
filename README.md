@@ -9,8 +9,8 @@ for Active Media <br /><br />
 
 _Side Menu_<br />
 
-![Homepage](https://github.com/sahilachhava/ActiveMedia/blob/main/screenshots/menu.png)<br />
+![Homepage](https://github.com/sahilachhava/FirstActiveMedia/blob/main/screenshots/menu.png)<br />
 
 _Full Page website_<br />
 
-![Homepage](https://github.com/sahilachhava/ActiveMedia/blob/main/screenshots/home.png)<br />
+![Homepage](https://github.com/sahilachhava/FirstActiveMedia/blob/main/screenshots/home.png)<br />
