@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="media,active media,intrinsic,standards,integrity,services,provide,quality,Media industry,achievements,Asif Kadri,innovation,experience,integration,Media Buying,publishing,media products,print,television,radio,outdoor,
+zee network,U tv,M tv,ET now,9 xm,astha,sanskar,times now,aff, ahmedabad food fest, food fest, ahmedabad,zoom,mail today,incredible india,jet wings,radio city 91.1,hum fm,dhoom fm 1062,broadcast,cinemaya media,international format,readership,pictorial presentations,reader friendly,glamour world,bollywood stars,lifestyle,talk show,horoscopes,countdowns,ooh,out of home,harra fresh" />
+
+<title>Active Media | Complete Media Solutions | A Media Company</title>
+<link href="logo.png" rel="icon">
+
+<!--Plugins css-->
+<link rel="stylesheet" href="http://www.themesindustry.com/html/xeone/css/plugins.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Custom Styles-->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!--PreLoader-->
+<div class="loader">
+   <div class="loader-inner">
+      <div class="loader-blocks">
+         <span class="block-1"></span>
+         <span class="block-2"></span>
+         <span class="block-3"></span>
+         <span class="block-4"></span>
+         <span class="block-5"></span>
+         <span class="block-6"></span>
+         <span class="block-7"></span>
+         <span class="block-8"></span>
+         <span class="block-9"></span>
+         <span class="block-10"></span>
+         <span class="block-11"></span>
+         <span class="block-12"></span>
+         <span class="block-13"></span>
+         <span class="block-14"></span>
+         <span class="block-15"></span>
+         <span class="block-16"></span>
+      </div>
+   </div>
+</div>
+<!--PreLoader Ends-->
+
+
+<!-- header -->
+<!-- header -->
+<header class="site-header">
+   <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+   <br><br><br>
+      <!--side menu open button-->
+     <a href="javascript:void(0)" class="d-none d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
+          <span></span> <span></span> <span></span>
+       </a>
+   </nav>
+
+   <!-- side menu -->
+  <div class="side-menu">
+      <div class="inner-wrapper">
+         <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+         <nav class="side-nav">
+            <ul class="navbar-nav w-100">
+               <li class="nav-item active">
+                  <a class="nav-link" href="index.html" data-text="Home">Home</a>
+               </li>
+	         <li class="nav-item active">
+                  <a class="nav-link" href="aff_gallery.html" data-text="AFF Gallery">AFF Gallery</a>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="side-footer w-100">
+            <ul class="social-icons-simple white top40">
+            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
+            <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+         </ul>
+         <p class="whitecolor">&copy; 2018 Active Media. Design &amp; Managed by <a href="https://github.com/sahilachhava" target="_blank">Sahil Achhava</a></p>
+         </div>
+      </div>
+   </div>
+   <a id="close_side_menu" href="javascript:void(0);"></a>
+   <!-- End side menu -->
+</header>
+<!-- header -->   
+
+
+<!--page Header-->
+<section class="page-header parallaxie padding_top center-block">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <div class="page-titles text-center">
+               <h2 class="whitecolor font-light bottom30">Our Projects</h2>
+               <ul class="breadcrumb justify-content-center">
+                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                 <li class="breadcrumb-item active" aria-current="page">Our Projects</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--page Header ends-->
+
+
+<!--Gallery-->
+<section id="portfolio-xe" class="bglight padding">
+   <div class="container">
+    <div class="row">
+         <div class="col-md-10 offset-md-1 col-sm-12 text-center">
+            <div id="flat-filters" class="cbp-l-filters dark bottom30">
+               <div data-filter="*" class="cbp-filter-item">
+                  <span>All</span>
+               </div>
+               <div data-filter=".aff" class="cbp-filter-item">
+                  <a href="aff_gallery.html"><span>Ahmedabad Food Fest</span></a>
+               </div>
+               <div data-filter=".led" class="cbp-filter-item">
+                  <span>IRIS 360 LED Screen</span>
+               </div>
+               <div data-filter=".rail" class="cbp-filter-item">
+                  <span>Train LED</span>
+               </div>
+	       <div data-filter=".exi" class="cbp-filter-item">
+                  <span>Exibitions</span>
+               </div>
+	       <div data-filter=".out" class="cbp-filter-item">
+                  <span>Outdoors</span>
+               </div>
+               <div data-filter=".other" class="cbp-filter-item">
+                  <span>Other</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="flat-gallery" class="cbp">
+      <?php
+         include("../erp/connection.php");
+         $sql = "select * from photos where tag!='aff'";
+         $res = mysqli_query($conn,$sql);
+         while($row=mysqli_fetch_array($res))
+         {
+            extract($row);
+            echo "<div class='cbp-item $tag print'>
+                  <img src='photos/$url' alt='$name'>
+                  <div class='overlay center-block whitecolor'>
+                     <a class='plus' data-fancybox='gallery' href='photos/$url'></a>
+                     <h4 class='top30'>$name</h4>
+                     <p>$des</p>
+                  </div>
+               </div>";
+         } 
+      ?>
+      </div>
+   </div>
+</section>
+<!--Gallery ends -->   
+                        
+      
+<!--Site Footer Here-->
+<footer id="site-footer" class="padding_half">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 text-center">
+            <ul class="social-icons bottom25">
+               <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
+            </ul>
+            <p class="copyrights">&copy; 2018 Active Media. Developed &amp; Managed by <a href="https://github.com/sahilachhava" target="_blank">Sahil Achhava</a> </p>
+         </div>
+      </div>
+   </div>
+</footer>
+<!--Footer ends-->   
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery-3.1.1.min.js"></script>
+
+<!--Bootstrap Core-->
+<script src="http://www.themesindustry.com/html/xeone/js/popper.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/bootstrap.min.js"></script>
+
+<!--to view items on reach-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery.appear.js"></script>
+
+<!--Equal-Heights-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery.matchHeight-min.js"></script>
+
+<!--Owl Slider-->
+<script src="http://www.themesindustry.com/html/xeone/js/owl.carousel.min.js"></script>
+
+<!--number counters-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery-countTo.js"></script>
+ 
+<!--Parallax Background-->
+<script src="http://www.themesindustry.com/html/xeone/js/parallaxie.js"></script>
+  
+<!--Cubefolio Gallery-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery.cubeportfolio.min.js"></script>
+
+<!--FancyBox popup-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery.fancybox.min.js"></script>        
+      
+<!--Youtube Video Background-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery.mb.YTPlayer.min.js"></script>
+
+<!--TypeWriter-->
+<script src="http://www.themesindustry.com/html/xeone/js/typewriter.js"></script>
+      
+<!--Particles-->
+<script src="http://www.themesindustry.com/html/xeone/js/particles.min.js"></script>                  
+  
+<!--WOw animations-->
+<script src="http://www.themesindustry.com/html/xeone/js/wow.min.js"></script>
+      
+<!--Revolution SLider-->
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="http://www.themesindustry.com/html/xeone/js/revolution/extensions/revolution.extension.video.min.js"></script> 
+
+<script src="http://www.themesindustry.com/html/xeone/js/functions.js"></script>
+
+</body>
+</html>
